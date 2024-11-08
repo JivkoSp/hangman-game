@@ -15,9 +15,8 @@ namespace Besenica
                     Options.DisplayGameRules();
                     break;
                 case "2":
-                    // TODO
-                    // validate the word input
-                    // create separate class for handling the core game logic
+                    var word = WordInputValidator.ValidateWordInput();
+                    HangmanController.PlayHangman(word);
                     break;
                 case "3":
                     // TODO
