@@ -21,5 +21,16 @@ namespace Besenica
             Console.WriteLine("4. Go back");
             Console.WriteLine();
         }
+
+        public static void DisplayGameRules()
+        {
+            Console.WriteLine("\n *** Game Rules *** \n");
+            Console.WriteLine("\n Rules of Hangman\r\n" +
+                              "\nThe goal is to guess the hidden word, with each of its letters represented by horizontal dashes.\r" +
+                              "\nIf the guessed letter is present in the word, it will appear in the correct position(s)\n" +
+                              "(including multiple times if it occurs more than once).\r\nOtherwise, the vertical dashes representing" +
+                              "the remaining attempts will decrease by one.\r" +
+                              "\nWhen all vertical dashes disappear after 6 incorrect guesses, the game is over — the player is \"hanged\"! \n");
+        }
     }
 }
