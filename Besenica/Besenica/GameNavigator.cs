@@ -1,7 +1,7 @@
 ﻿
 namespace Besenica
 {
-    internal sealed class GameNavigator
+    internal static class GameNavigator
     {
         public static void HandleGameMenu()
         {
