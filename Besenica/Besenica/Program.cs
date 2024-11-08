@@ -18,7 +18,6 @@ namespace Besenica
                 switch (userChoice)
                 {
                     case "1":
-                        Console.Clear();
                         Options.DisplayGameMenu();
                         GameNavigator.HandleGameMenu();
                         break;
