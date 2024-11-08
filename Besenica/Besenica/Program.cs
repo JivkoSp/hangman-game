@@ -20,7 +20,7 @@ namespace Besenica
                     case "1":
                         Console.Clear();
                         Options.DisplayGameMenu();
-                        // TODO: Must handle the interactions with the game menu
+                        GameNavigator.HandleGameMenu();
                         break;
                     case "2":
                         Console.Clear();
