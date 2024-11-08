@@ -19,8 +19,16 @@ namespace Besenica
                     HangmanController.PlayHangman(word);
                     break;
                 case "3":
-                    // TODO
-                    // open a txt file and get a random word from it.
+                    string filePath = "words.txt";
+
+                    if (!File.Exists(filePath))
+                    {
+                        // If the file does not exist, create it with 20 (by default) random words
+                        FileManager.CreateAndInitializeFileWithWords();
+                    }
+
+                    var randomWord = FileManager.GetRandomWordFromFile(filePath);
+                    HangmanController.PlayHangman(randomWord);
                     break;
                 case "4":
                     return; // Go back to the main menu
