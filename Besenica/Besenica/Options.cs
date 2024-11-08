@@ -1,7 +1,7 @@
 ﻿
 namespace Besenica
 {
-    internal sealed class Options
+    internal static class Options
     {
         public static void DisplayMainMenu()
         {
