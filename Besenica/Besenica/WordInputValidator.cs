@@ -1,7 +1,7 @@
 ﻿
 namespace Besenica
 {
-    internal sealed class WordInputValidator
+    internal static class WordInputValidator
     {
         public static string ValidateWordInput()
         {
