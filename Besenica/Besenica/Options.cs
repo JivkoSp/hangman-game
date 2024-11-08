@@ -14,6 +14,7 @@ namespace Besenica
 
         public static void DisplayGameMenu()
         {
+            Console.Clear();
             Console.WriteLine("\n *** Game Menu *** \n");
             Console.WriteLine("1. View the game rules");
             Console.WriteLine("2. Enter a word");
@@ -24,6 +25,7 @@ namespace Besenica
 
         public static void DisplayGameRules()
         {
+            Console.Clear();
             Console.WriteLine("\n *** Game Rules *** \n");
             Console.WriteLine("\n Rules of Hangman\r\n" +
                               "\nThe goal is to guess the hidden word, with each of its letters represented by horizontal dashes.\r" +
