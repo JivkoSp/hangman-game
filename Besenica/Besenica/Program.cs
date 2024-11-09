@@ -23,7 +23,7 @@ namespace Besenica
                         break;
                     case "2":
                         Console.Clear();
-                        Console.WriteLine("Feature not yet implemented.");
+                        FileManager.ReadGameDataFromFile();
                         break;
                     case "3":
                         exitGame = true;
