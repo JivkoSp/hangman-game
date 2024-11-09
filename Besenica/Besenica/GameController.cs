@@ -2,6 +2,7 @@
 
 namespace Besenica
 {
+    // This class is responsible for the core domain logic of the game.
     internal static class GameController
     {
         public static void Play(string word)
@@ -15,11 +16,11 @@ namespace Besenica
             }
 
             var wordDict = new Dictionary<char, List<int>>();
-            string userTries = " | | | | | |";
+            string userTries = " | | | | | |"; 
             var userWord = new StringBuilder();
             int attempts = 6;
 
-            FileManager.WriteGameRoundDataToFile(word, false);
+            FileManager.WriteGameRoundDataToFile(word, false); // By default the user has NOT guessed the word.
 
             for (int i = 0; i < word.Length; i++)
             {
@@ -70,20 +71,20 @@ namespace Besenica
                 {
                     foreach (var letterPosition in wordDict[chosenLetter])
                     {
-                        userWord[letterPosition * 2] = chosenLetter; // *2 because of spaces in userWord
+                        userWord[letterPosition * 2] = chosenLetter; // *2 because of spaces in userWord.
                     }
 
-                    // Remove the letter from the dictionary to prevent duplicate matches
+                    // Remove the letter from the dictionary to prevent duplicate matches.
                     wordDict.Remove(chosenLetter);
                 }
                 else
                 {
-                    // Wrong guess: reduce attempts and update user tries
+                    // Wrong guess - reduce attempts and update user tries.
                     attempts--;
                     userTries = userTries.Remove(userTries.LastIndexOf('|'), 1);
                 }
 
-                // Check if the user has guessed the word
+                // Check if the user has guessed the word.
                 if (!userWord.ToString().Contains('-'))
                 {
                     FileManager.WriteGameRoundDataToFile(word, true);
