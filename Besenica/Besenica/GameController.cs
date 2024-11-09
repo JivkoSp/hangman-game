@@ -19,6 +19,8 @@ namespace Besenica
             var userWord = new StringBuilder();
             int attempts = 6;
 
+            FileManager.WriteGameRoundDataToFile(word, false);
+
             for (int i = 0; i < word.Length; i++)
             {
                 if (!wordDict.ContainsKey(word[i]))
@@ -84,6 +86,8 @@ namespace Besenica
                 // Check if the user has guessed the word
                 if (!userWord.ToString().Contains('-'))
                 {
+                    FileManager.WriteGameRoundDataToFile(word, true);
+
                     Console.Clear();
                     Console.WriteLine($"\nCongratulations! You guessed the word: {word}");
                     Console.WriteLine("Press any key to go back to the Game Menu...");
