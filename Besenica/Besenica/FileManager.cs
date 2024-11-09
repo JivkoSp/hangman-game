@@ -1,6 +1,7 @@
 ﻿
 namespace Besenica
 {
+    // This class is responsible for file related operations.
     internal static class FileManager
     {
         public static void CreateAndInitializeFileWithWords(string filePath = "words.txt")
