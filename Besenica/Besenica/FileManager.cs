@@ -25,6 +25,24 @@ namespace Besenica
             File.AppendAllText(filePath, $"\n{word} | {guessed} | {DateTime.Now}");
         }
 
+        public static void ReadGameDataFromFile(string filePath = "game_scores.txt")
+        {
+            if (!File.Exists(filePath))
+            {
+                Console.WriteLine("\nThere is no available game score!\n");
+                return;
+            }
+
+            var gameScoreData = File.ReadLines(filePath);
+
+            foreach(var gameScore in gameScoreData)
+            {
+                Console.WriteLine(gameScore);
+            }
+
+            Console.WriteLine("----------------------\n");
+        }
+
         public static string GetRandomWordFromFile(string filePath)
         {
             string[] words = File.ReadAllLines(filePath);
