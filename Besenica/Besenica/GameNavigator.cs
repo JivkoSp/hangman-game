@@ -1,6 +1,7 @@
 ﻿
 namespace Besenica
 {
+    // This class is responsible for handling the game navigation.
     internal static class GameNavigator
     {
         public static void HandleGameMenu()
@@ -23,7 +24,7 @@ namespace Besenica
 
                     if (!File.Exists(filePath))
                     {
-                        // If the file does not exist, create it with 20 (by default) random words
+                        // If the file does not exist, create it and initialize it with random words.
                         FileManager.CreateAndInitializeFileWithWords();
                     }
 
