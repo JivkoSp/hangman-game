@@ -1,6 +1,7 @@
 ﻿
 namespace Besenica
 {
+    // This class is responsible for providing various options to the user about the game mechanics.
     internal static class Options
     {
         public static void DisplayMainMenu()
