@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yjW/e0DzOTB6ExtOn2yEC/6UJ1dch+jrCXuWJeYm6zStPHsqBndUkyZd7kWyKmruFQqG+N1y1uoCV1m4TI+3lg==",
+  "dgSpecHash": "J5DpJmsxKkjfDaUuBKJyP1ijcqdE0FfCVAe30aJInoSH6rQ1CgzHuE+e5TgLx6ycuebSMB8meoCwHD9MPFQpcw==",
   "success": true,
-  "projectFilePath": "D:\\Uni\\C#\\Projects\\hangman\\Besenica\\Besenica\\Besenica.csproj",
+  "projectFilePath": "D:\\Uni\\C#\\Projects\\hangman\\hangman-game\\Besenica\\Besenica\\Besenica.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -16,7 +16,7 @@ namespace Besenica
                     break;
                 case "2":
                     var word = WordInputValidator.ValidateWordInput();
-                    HangmanController.PlayHangman(word);
+                    GameController.Play(word);
                     break;
                 case "3":
                     string filePath = "words.txt";
@@ -28,7 +28,7 @@ namespace Besenica
                     }
 
                     var randomWord = FileManager.GetRandomWordFromFile(filePath);
-                    HangmanController.PlayHangman(randomWord);
+                    GameController.Play(randomWord);
                     break;
                 case "4":
                     return; // Go back to the main menu
